@@ -8,4 +8,10 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    server: {
+        hmr: {
+            host: 'yatzy.local.pecon.no',
+            port: 5713,
+        },
+    },
 });
