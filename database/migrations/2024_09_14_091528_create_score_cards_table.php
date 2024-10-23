@@ -14,7 +14,8 @@ return new class extends Migration
         Schema::create('score_cards', function (Blueprint $table) {
             $table->id();
             $table->foreignId('game_id')->constrained()->cascadeOnDelete();
-            $table->foreignId('player_id')->constrained('game_players')->cascadeOnDelete();
+            $table->string('player_name');
+            $table->string('ip_address')->nullable();
             $table->unsignedTinyInteger('ones')->nullable();
             $table->unsignedTinyInteger('twos')->nullable();
             $table->unsignedTinyInteger('threes')->nullable();

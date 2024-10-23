@@ -10,4 +10,5 @@ class GameController extends Controller
     {
         return view('create');
     }
+
 }
